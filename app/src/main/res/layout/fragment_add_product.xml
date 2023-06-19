@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.viewType.admin.fragments.AddProductFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_cardview_login"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontal15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontal95"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal10" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:elevation="11dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center_horizontal"
+        android:text="INGRESAR PRODUCTO"
+        android:textColor="@color/orange"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="@+id/cardview" />
+
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardview"
+        app:layout_constraintStart_toStartOf="@+id/cardview"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <EditText
+            android:id="@+id/txtName"
+            style="@style/edittextAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_name"
+            android:hint="Nombre del producto"
+            android:inputType="text"
+            android:maxLength="25" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardview"
+        app:layout_constraintStart_toStartOf="@+id/cardview"
+        app:layout_constraintTop_toBottomOf="@+id/llName">
+
+        <EditText
+            android:id="@+id/txtDescripcion"
+            style="@style/edittextAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_description"
+            android:hint="Descripcion"
+            android:inputType="text"
+            android:maxLength="40" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardview"
+        app:layout_constraintStart_toStartOf="@+id/cardview"
+        app:layout_constraintTop_toBottomOf="@+id/llDescription" >
+        <EditText
+            android:id="@+id/txtPrice"
+            style="@style/edittextAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_price"
+            android:hint="Precio"
+            android:maxLength="7"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="11dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/cardview"
+        app:layout_constraintStart_toStartOf="@+id/cardview"
+        app:layout_constraintTop_toBottomOf="@+id/llPrice">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Categoria: "
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/SpinnerCategoria"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbutonImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llCategory">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnElegirImagen"
+            style="@style/button_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Elegir imagen"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImagen"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llbutonImage">
+
+        <ImageView
+            android:id="@+id/imagenProducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llbutonImage" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/cardview"
+        app:layout_constraintEnd_toEndOf="@+id/cardview"
+        app:layout_constraintStart_toStartOf="@+id/cardview"
+        app:layout_constraintTop_toBottomOf="@+id/cvImagen">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAgregarProducto"
+            style="@style/button_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Agregar Nuevo Producto"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:indeterminateTint="@color/orange"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="subiendo imagen..."
+            android:textColor="@color/orange"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

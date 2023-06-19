@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "413387810368",
+    "project_id": "pedidosbach-58f76",
+    "storage_bucket": "pedidosbach-58f76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413387810368:android:43bc4d0702aa928358e1a5",
+        "android_client_info": {
+          "package_name": "com.example.pedidosbach"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhMlvG7_7RXW5yUX3zUETt3vltS_oBYHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
