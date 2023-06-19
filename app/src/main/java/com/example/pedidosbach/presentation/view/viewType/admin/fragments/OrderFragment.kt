@@ -10,9 +10,9 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pedidosbach.R
-import com.example.pedidosbach.aplication.listener.IOrderReLoadListener
-import com.example.pedidosbach.aplication.listener.IOrderUpdateListener
-import com.example.pedidosbach.aplication.listener.IPedidoLoadListener
+import com.example.pedidosbach.presentation.listener.IOrderReLoadListener
+import com.example.pedidosbach.presentation.listener.IOrderUpdateListener
+import com.example.pedidosbach.presentation.listener.IPedidoLoadListener
 import com.example.pedidosbach.databinding.FragmentOrderBinding
 import com.example.pedidosbach.domain.model.PedidoModel
 import com.example.pedidosbach.presentation.adapter.order.OrderAdapter

@@ -11,9 +11,9 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.pedidosbach.R
-import com.example.pedidosbach.aplication.listener.ICartCountListener
-import com.example.pedidosbach.aplication.listener.ICartAddListener
-import com.example.pedidosbach.aplication.listener.IProductLoadListener
+import com.example.pedidosbach.presentation.listener.ICartCountListener
+import com.example.pedidosbach.presentation.listener.ICartAddListener
+import com.example.pedidosbach.presentation.listener.IProductLoadListener
 import com.example.pedidosbach.databinding.FragmentCategoryBinding
 import com.example.pedidosbach.domain.model.CartModel
 import com.example.pedidosbach.domain.model.product.ProductResponse

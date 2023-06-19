@@ -1,6 +1,6 @@
 package com.example.pedidosbach.aplication.useCase.product
 
-import com.example.pedidosbach.aplication.listener.IProductLoadListener
+import com.example.pedidosbach.presentation.listener.IProductLoadListener
 import com.example.pedidosbach.infraestructure.connect.product.LoadProductConnect
 
 class LoadProductUseCase {

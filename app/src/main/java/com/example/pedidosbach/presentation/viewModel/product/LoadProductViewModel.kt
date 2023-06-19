@@ -2,7 +2,7 @@ package com.example.pedidosbach.presentation.viewModel.product
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.pedidosbach.aplication.listener.IProductLoadListener
+import com.example.pedidosbach.presentation.listener.IProductLoadListener
 import com.example.pedidosbach.aplication.useCase.product.LoadProductUseCase
 import kotlinx.coroutines.launch
 

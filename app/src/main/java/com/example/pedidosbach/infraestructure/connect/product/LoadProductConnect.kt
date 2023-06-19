@@ -2,7 +2,7 @@ package com.example.pedidosbach.infraestructure.connect.product
 
 
 import android.util.Log
-import com.example.pedidosbach.aplication.listener.IProductLoadListener
+import com.example.pedidosbach.presentation.listener.IProductLoadListener
 import com.example.pedidosbach.domain.model.product.ProductResponse
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
